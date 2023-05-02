@@ -1,6 +1,6 @@
 # Rapidez Guest Wishlist
 
-Simple wishlist for guests where product SKU's will be stored in local storage. There is no cart merging when logging in!
+Wishlist for guests where product SKU's will be stored in local storage. There is no cart merging when logging in!
 
 ## Installation
 
@@ -12,7 +12,7 @@ The wishlist can be found at `/wishlist`
 
 ### Product page
 
-To add a wishlist toggle button on the product page just include the button view and specify where the sku can be found as Javascript variable. Add this somewhere on `resources/views/vendor/rapidez/product/overview.blade.php`
+To add a wishlist toggle button on the product page just include the button view and specify where the sku can be found as Javascript variable in: `resources/views/vendor/rapidez/product/overview.blade.php`
 ```
 @include('rapidez-guestwishlist::button', ['sku' => 'config.product.sku'])
 ```
