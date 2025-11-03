@@ -3,12 +3,18 @@ import { useLocalStorage } from '@vueuse/core'
 
 export default {
     render() {
-        return this.$scopedSlots.default({
+        return this?.$slots?.default({
             add: this.add,
             remove: this.remove,
             toggle: this.toggle,
             wishlist: this.wishlist,
         })
+    },
+
+    data() {
+        return {
+            wishlist: useLocalStorage('wishlist', [])
+        }
     },
 
     methods: {
@@ -26,9 +32,5 @@ export default {
                 : this.add(sku)
         }
     },
-
-    computed: {
-        wishlist: wrapValue(useLocalStorage('wishlist', []))
-    }
 }
 </script>

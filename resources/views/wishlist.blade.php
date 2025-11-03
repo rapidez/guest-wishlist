@@ -5,8 +5,8 @@
 
 @section('content')
     <div class="container mx-auto">
-        <wishlist>
-            <div slot-scope="{ wishlist }">
+        <wishlist v-slot="{ wishlist }">
+            <div>
                 <div v-if="wishlist.length">
                     <x-rapidez::productlist value="wishlist"/>
                 </div>
