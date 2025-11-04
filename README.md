@@ -28,8 +28,8 @@ The same for the product listing `resources/views/vendor/rapidez/listing/partial
 
 If you'd like to display a wishlist button with a count (for example in the header) you can use this:
 ```
-<wishlist>
-    <a href="/wishlist" slot-scope="{ wishlist }">
+<wishlist v-slot="{ wishlist }">
+    <a href="/wishlist">
         <span v-cloak v-if="wishlist.length">@{{ wishlist.length }}</span>
         <span v-else>0</span>
     </a>
