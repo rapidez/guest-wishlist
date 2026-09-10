@@ -1,6 +1,14 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/guest-wishlist/compare/4.0.0...master)
+[Unreleased changes](https://github.com/rapidez/guest-wishlist/compare/5.0.0...master)
+## [5.0.0](https://github.com/rapidez/guest-wishlist/releases/tag/5.0.0) - 2026-09-10
+
+### Added
+
+- Rapidez v5 support (#4)
+
+
+
 ## [4.0.0](https://github.com/rapidez/guest-wishlist/releases/tag/4.0.0) - 2025-06-05
 
 ### Added
